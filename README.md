@@ -16,16 +16,7 @@ Hardware  --- Max Stable FPS tested here:
 Ryzen 7 5800X + RTX 2060 Super	-   2500 FPS	Maximum Windows Message Queue throughput reached.    
 Ryzen 5 4500U (Vega iGPU)	      -   2000 FPS	Incredible performance for an integrated GPU.    
 Intel Core m3 (Asus UX305CA)	  -   1000 FPS	Achieved on a passive, fanless ultrabook! Yes he not started burning or exploded still oO      
-      
-⚠️ The "Limit" (Why it breaks at 2500 FPS)    
-   
-You might wonder: "Why does the trackbar freeze above 2500 FPS?" 
-
-This is not an engine bottleneck, but the absolute physical limit of the Windows Message Queue combined with the Delphi VCL. 
-To render an SDL window created in the main thread, we use TThread.Queue to push render commands from the background thread to the VCL main thread. At 2500+ FPS, we are pushing 2500+ messages per second into the Windows queue. Eventually, the main thread spends 100% of its time executing RenderEffect and cannot process UI inputs (like dragging the window or moving a trackbar). 
-      
-Interestingly, the SDL animation itself often continues rendering perfectly in the background, even when the VCL UI elements have frozen!    
-     
+          
 ✨ Features & Architecture     
      
      Dynamic SDL3 Binding: No static .obj or .dcu files required. The SDL3.dll is loaded dynamically via LoadLibrary. If the DLL is missing, the component fails gracefully.
