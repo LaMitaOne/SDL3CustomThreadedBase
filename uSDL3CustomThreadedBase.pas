@@ -5,7 +5,6 @@
   Utilizing SDL3 to create its own native OS window dynamically.
 
   Author: Lara Miriam Tamy Reschke / LamitaOne
-  Date:   2024
   License: MIT (or whatever you prefer)
 
   ----------------------------------------------------------------------------
