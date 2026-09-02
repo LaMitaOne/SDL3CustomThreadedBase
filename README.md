@@ -13,7 +13,7 @@ This engine pushes Delphi and the Windows OS to their absolute limits. By offloa
      
 Hardware  --- Max Stable FPS tested here:     
 	    
-Ryzen 7 5800X + RTX 2060 Super	-   2500 FPS	Maximum Windows Message Queue throughput reached.    
+Ryzen 7 5800X + RTX 2060 Super	-   2500 FPS	    
 Ryzen 5 4500U (Vega iGPU)	      -   2000 FPS	Incredible performance for an integrated GPU.    
 Intel Core m3 (Asus UX305CA)	  -   1000 FPS	Achieved on a passive, fanless ultrabook! Yes he not started burning or exploded still oO      
           
