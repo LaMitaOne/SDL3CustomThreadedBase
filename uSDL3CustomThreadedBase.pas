@@ -1,5 +1,5 @@
 {*******************************************************************************
-  SDL3ThreadedRenderer v0.1
+  SDL3ThreadedRenderer v1.0
 ********************************************************************************
   A high-performance, threaded SDL3 component for Delphi/VCL.
   Utilizing SDL3 to create its own native OS window dynamically.
